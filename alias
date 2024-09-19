@@ -18,6 +18,8 @@ alias k1='kubectl get pods --sort-by=".status.containerStatuses[0].restartCount"
 alias k2='kubectl get pods --sort-by='.status.containerStatuses[0].restartCount' |grep -v Running'
 alias kdp='kubectl describe pod'
 alias tr='terraform'
+alias cbc='xclip -sel clip'
+alias cbp='xclip -sel clip -o'
 alias s1='echo Prometheus loading...;pod=$(kubectl get pods --namespace monitoring -l "app.kubernetes.io/name=prometheus" -o jsonpath="{.items[0].metadata.name}") && kubectl port-forward ${pod} 8080:9090 -n monitoring'
 alias s2='echo Alermanager loading...;pod=$(kubectl get pods --namespace monitoring -l "app.kubernetes.io/name=alertmanager" -o jsonpath="{.items[0].metadata.name}") && kubectl port-forward ${pod} 8080:9093 -n monitoring'
 alias s3='echo Kiali loading...;pod=$(kubectl get pods --namespace istio-system -l "app.kubernetes.io/name=kiali" -o jsonpath="{.items[0].metadata.name}") && kubectl port-forward ${pod} 8080:20001 -n istio-system'
