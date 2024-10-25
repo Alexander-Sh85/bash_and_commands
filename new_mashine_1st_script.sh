@@ -33,6 +33,7 @@ sudo apt install -y ansible \
                     logtop \
                     lshw \
                     mc \
+                    mysql-client \
                     ncdu \
                     net-tools \
                     nmap \
