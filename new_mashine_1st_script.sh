@@ -55,7 +55,7 @@ sudo apt install -y ansible \
                     xpad \
                     xclip --fix-broken  2>> log.install
 # Yandex Cli
-curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
+curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash 2>> log.install
 
 #DBeaver 
 sudo snap install dbeaver-ce  2>> log.install
@@ -71,7 +71,7 @@ sudo snap install telegram-desktop  2>> log.install
 sudo snap install kubectx --classic  2>> log.install
 
 #Terraform
-sudo snap install terraform --classic
+sudo snap install terraform --classic 2>> log.install
 
 #DOCKER
 # Add Docker's official GPG key:
@@ -112,7 +112,7 @@ sudo apt install code   2>> log.install # or code-insiders
 
 #KUBECTL
 curl -LO https://dl.k8s.io/release/v1.31.0/bin/linux/amd64/kubectl
-chmod +x ./kubectl
+chmod +x ./kubectl 2>> log.install
 sudo mv ./kubectl /usr/local/bin/kubectl
 
 # google-drive-ocamlfuse
