@@ -6,7 +6,7 @@ gitsh() { git push origin "$1"; }
 
 
 # aliase for ip utils
-alias ipi='ip -4 -c -br -h -o link show'
+alias ipl='ip -4 -c -br -h -o link show'
 alias ipa='ip -4 -c -br -h -o a'
 alias ipr='ip -4 -c -br -h -o r'
 alias ipn='ip -4 -c -br -h -o n'
